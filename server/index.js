@@ -53,7 +53,11 @@ app.get('/control/*', (req, res) => {
   res.sendFile(path.join(__dirname, '../apps/control/dist', 'index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-  console.log(`Control Tool accessible at http://localhost:${PORT}/control`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Control Tool accessible at http://localhost:${PORT}/control`);
+  });
+}
+
+module.exports = app;
