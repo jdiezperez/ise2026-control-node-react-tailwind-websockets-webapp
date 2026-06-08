@@ -69,3 +69,9 @@ npm run dev
 
 ## Usage
 Once both the server and the frontend are running, open the provided frontend URL in your browser. You can then interact with the UI by dragging available assets into the screen area, which will trigger the respective OSC commands to update the remote screen content.
+
+## Screenshots
+
+Main UI
+
+<img src="_images/control_01.png" alt="Main UI" width="800">
